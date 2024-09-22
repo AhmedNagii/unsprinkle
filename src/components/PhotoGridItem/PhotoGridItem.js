@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 const PhotoGridItem = ({ id, src, alt, tags }) => {
-const newsrc = src.replace(".jpg", "@2x.avif");
 
   return (
     <article>
@@ -24,7 +23,7 @@ const newsrc = src.replace(".jpg", "@2x.avif");
               ${src.replace(".jpg", "@3x.jpg")} 3x
             `}
           />
-          <Image src={src} />
+          <Image alt={alt} src={src} />
         </picture>
       </Anchor>
       <Tags>
